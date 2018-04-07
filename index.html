@@ -7,38 +7,79 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat|Raleway" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
     <title>Mark Wang's Portfolio</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div id="navigation">
+      <ul class="nav nav-pills">
+        <li><a href="https://www.linkedin.com/in/xilinwang">Mark Wang</a></li>
+        <li class="pull-right"><a href="#contact">Contact</a></li>
+        <li class="pull-right"><a href="#portfolio-text">Resume</a></li>
+        <li class="pull-right"><a href="#portfolio">Portfolio</a></li>
+        <li class="pull-right"><a href="#about">About Me</a></li>
+      </ul>
+    </div>
+    <div class="main">
       <div id="intro" class="intro">
-        <ul class="nav nav-pills">
-          <li><a href="https://www.linkedin.com/in/xilinwang">Mark Wang</a></li>
-          <li class="pull-right"><a href="#contact">Contact</a></li>
-          <li class="pull-right"><a href="#portfolio-text">Resume</a></li>
-          <li class="pull-right"><a href="#portfolio">Portfolio</a></li>
-          <li class="pull-right"><a href="#about">About Me</a></li>
-        </ul>
         <div class="block text-center">
           <h1>Mark Wang</h1>
           <h2>Web Geek. JavaScript Fanatic. Idea Builder.</h2>
         </div>
       </div>
       <div id="about" class="container-fluid">
-        <div id="profile-pic" class="row">
-          <div id="header" class="col-lg-6 text-center">
-              <h1>Hello, World!</h1>
-              <h1>I'm Mark Wang.</h1>
+        <div id="about-content" class="row">
+            <div class="row">
+            <div id="header" class="col-lg-6 text-center">
+                <h1>Hello, World!</h1>
+                <h1>I'm Mark Wang.</h1>
+            </div>
+            <div class="col-lg-5" id="intro-text">
+              <p>My name is Mark and I currently live in College Station, TX.
+              I'm super passionate about web development - over the past few years, I've gradually built up my technical expertise in HTML,
+              CSS, JavaScript, React.js, Node.js, and more. I'm constantly exploring and learning
+              new technologies and just excited about turning new ideas into realities by building cool web apps. Feel
+              free to check out my portfolio! In my free time, I could be found reading, baking,
+              playing Irish whistle, wandering in museums or spending hours coding at my favorite coffee shop.</p>
+            </div>
           </div>
-          <div class="col-lg-6" id="intro-text">
-            <p>My name is Mark and I'm super passionate about web development.
-            Over the past few years, I've gradually built up my technical expertise in HTML,
-            CSS, JavaScript, React.js, Node.js, and more. I'm constantly exploring and learning
-            new technologies and turn my ideas into realities by building cool web apps. Feel
-            Free to check out my portfolio! In my free time, I could be found reading,
-            playing Irish whistle, wandering in museums or spending hours coding at a coffee shop.</p>
+        </div>
+      </div>
+      <div id="tech-stack" class="container-fluid text-center">
+        <h1>My Skillset</h1>
+        <div id="skills" class="col-lg-10 col-lg-offset-1">
+          <div class="col-lg-3 skill text-center">
+            <i class="fab fa-html5 fa-fw fa-8x"></i>
+            <h3>HTML & CSS</h3>
+            <p>Skilled in Web Design using HTML5, CSS3 with its latest features, and prepocessors
+              like Sass and LESS. Did I mention I'm an art history minor? I
+              love making fancy prototypes and designing beautiful websites.</p>
+          </div>
+          <div class="col-lg-3 skill text-center">
+            <i class="fab fa-js-square fa-fw fa-8x"></i>
+            <h3>JavaScript</h3>
+            <p>JavaScript is my favorite langugae despite its many quirks. I'm good with
+            both vanilla JavaScript and web frameworks such as React, Angular, Vue, and jQuery.
+            I especially love React and have been using it extensively to build websites -
+            check out my portfolio below! </p>
+          </div>
+          <div class="col-lg-3 skill text-center">
+            <i class="fab fa-python fa-fw fa-8x"></i>
+            <h3>Python</h3>
+            <p>I like Python a lot as it CAN literally do everything for me from data analysis
+            to setting up a web server. I mainly used web frameworks like Flask and Django
+            but I'm now looking into libraries like Panda, Numpy and Scikit Learn to integrate
+            some data analysis into my apps.</p>
+          </div>
+          <div class="col-lg-3 skill text-center">
+            <i class="fa fa-database fa-fw fa-8x"></i>
+            <h3>Database</h3>
+            <p>I'm experienced with a myriad of database, both SQL and NoSQL. I started making
+            web apps with the classic PHP + MySQL combo, but have been using other database such
+            as MongoDB (which is my favorite so far), Redis and Neo4J. I also have worked in
+            database administration and data analysis.</p>
           </div>
         </div>
       </div>
@@ -46,7 +87,7 @@
         <div id="portfolio-text" class="row text-center">
           <h2>Check out my portfolio</h2>
           <h3>And my <a href="resume.pdf">resume</a></h3>
-          <h2><i class="arrow fa fa-angle-down"></i></h2>
+          <a href="#portfolio"><h2><i class="arrow fa fa-angle-down"></i></h2></a>
         </div>
       </div>
       <div id="portfolio" class="container-fluid">
@@ -111,6 +152,7 @@
       </div>
       <div id="contact" class="container-fluid">
         <div id="contact-text" class="row text-center">
+          <img id="profile-pic" src="img/profile.jpg"/>
           <h2>Let's get in touch.</h2>
         </div>
         <form class="text-center" action="mailto:popularwatson@gmail.com" method="post" enctype:"text/plain">
@@ -132,10 +174,11 @@
           </div>
         </form>
         <div id="social-media" class="col-lg-4 col-lg-offset-4">
-          <a href="https://www.github.com/athensbird"><i class="fa fa-github fa-fw fa-3x"></i></a>
-          <a href="https://www.linkedin.com/in/xilinwang"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-          <a href="https://www.facebook.com/mark.wang.58152"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-          <a href="https://plus.google.com/100299366968176549634"><i class="fa fa-google-plus fa-fw fa-3x"></i></a>
+          <a href="https://www.github.com/athensbird"><i class="fab fa-github fa-fw fa-3x"></i></a>
+          <a href="https://www.linkedin.com/in/xilinwang"><i class="fab fa-linkedin fa-fw fa-3x"></i></a>
+          <a href="mailto:popularwatson@gmail.com"><i class="fa fa-envelope fa-fw fa-3x"></i></a>
+          <a href="https://plus.google.com/100299366968176549634"><i class="fab fa-google-plus fa-fw fa-3x"></i></a>
+          <div class="row footer"><h5>Developed by @Mark Wang 2018</h5></div>
         </div>
       </div>
     </div>
