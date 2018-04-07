@@ -14,15 +14,18 @@ img {
   width: 100%;
 }
 
-.blog {
+#profile-pic img {
+  width: 12%;
+  border-radius: 60%;
+}
+
+.wrapper {
   overflow: hidden;
   position: relative;
 }
 
-.blog-inner {
-  height: 100%;
-  width: 100%;
-  padding: 40px 5px;
+.inner {
+  padding: 60px 20px;
   position: absolute;
   z-index: 1;
   -webkit-transition: 0.1s;
@@ -30,18 +33,40 @@ img {
   -moz-transition: 0.1s;
   -o-transition: 0.1s;
   transition: 0.1s;
+  align: center;
 }
 
 .col-lg-4 {
   padding: 0 !important;
 }
 
-.blog:hover img {
-  opacity: 0.4;
+.wrapper:hover img {
+  opacity: 0.2;
 }
 
 .blog:hover .blog-inner {
   top: 0;
+}
+
+.word:hover .word-inner {
+  top: 0;
+}
+
+.recipe:hover .recipe-inner {
+  top: 0;
+}
+
+.tower:hover .tower-inner {
+  top: 0;
+}
+
+.children:hover .children-inner {
+  top: 0;
+}
+
+.flashcard:hover .flashcard-inner {
+  top: 0;
+  left: 10%;
 }
 
 .block {
@@ -52,7 +77,7 @@ img {
 
 .nav-pills {
   font-size: 1.7em;
-  background-color: #E7DFDE;
+  background-color: white;
   opacity: .8;
 }
 
@@ -69,6 +94,49 @@ img {
   margin-top: 0 auto;
 }
 
-.portfolio {
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+
+#intro a {
+  color: black;
+}
+
+#portfolio, #about {
   margin-top: 3em;
+}
+
+#profile-pic {
+  text-align: center;
+}
+
+#about {
+  margin: 100px 0;
+}
+
+#portfolio-intro {
+  height: 400px;
+  position: relative;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+
+#portfolio-text h2 {
+  font-size: 6em;
+}
+
+#intro-text {
+  padding: 10 20%;
+  font-size: 1.5em;
+  text-align: justify;
 }

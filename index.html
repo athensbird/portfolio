@@ -4,19 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat|Raleway" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
     <title>Mark Wang's Portfolio</title>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="intro">
+      <div id="intro" class="intro">
         <ul class="nav nav-pills">
           <li><a href="#">Mark Wang</a></li>
           <li class="pull-right"><a href="#">Contact</a></li>
-          <li class="pull-right"><a href="#">Blog</a></li>
-          <li class="pull-right"><a href="#">Portfolio</a></li>
-          <li class="pull-right"><a href="#">About Me</a></li>
+          <li class="pull-right"><a href="#portfolio-text">Resume</a></li>
+          <li class="pull-right"><a href="#portfolio">Portfolio</a></li>
+          <li class="pull-right"><a href="#about">About Me</a></li>
         </ul>
         <div class="block text-center">
           <h1>Mark Wang</h1>
@@ -29,31 +32,85 @@
           <a class="btn btn-default" href="#">Google+</a>
         </div>
       </div>
-      <div class="portfolio container-fluid text-center">
+      <div id="about" class="container-fluid">
+        <div id="profile-pic" class="row">
+          <div class="col-lg-6 text-center">
+              <h1>Hello, World!</h1>
+              <h1>I'm Mark Wang.</h1>
+          </div>
+          <div class="col-lg-6" id="intro-text">
+            <p>My name is Mark and I'm super passionate about web development.
+            Over the past few years, I've gradually built up my technical expertise in HTML,
+            CSS, JavaScript, React.js, Node.js, and more. I'm constantly exploring and learning
+            new technologies and turn my ideas into realities by building cool web apps. Feel
+            Free to check out my portfolio! In my free time, I could be found reading,
+            playing Irish whistle, wandering in museums or spending hours coding at a coffee shop.</p>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio-intro" class="container-fluid">
+        <div id="portfolio-text" class="row text-center">
+          <h2>Check out my portfolio</h2>
+          <h3>And my <a href="resume.pdf">resume</a></h3>
+          <h2><i class="arrow fa fa-angle-down"></i></h2>
+        </div>
+      </div>
+      <div id="portfolio" class="container-fluid">
         <div class="row">
-          <div class="col-lg-4 blog">
-            <img src="img/blog.jpg" alt="Tower of Hanoi" />
-            <div class="blog-inner">
-                <h2>Readable</h2>
-                <p>Select your category and explore what's out there.</p>
-            </div>
+          <div class="col-lg-4 wrapper blog">
+            <a href="https://readable-frontend.herokuapp.com/"><img src="img/blog.jpg" alt="Readable"/>
+              <div class="inner blog-inner text-center">
+                  <h2>Readable</h2>
+                  <p>Mark's Reddit featured by React/Redux.</p>
+              </div>
+            </a>
           </div>
-          <div class="col-lg-4">
-            <img src="img/word1.jpg" alt="Isaiah's Place" />
+          <div class="col-lg-4 wrapper word">
+            <a href="https://wordies-front-end.herokuapp.com/home">
+              <img src="img/word1.jpg" alt="Wordies" height="5%" width="5%" />
+              <div class="inner word-inner text-center">
+                  <h2>Wordies</h2>
+                  <p>Build your personalized wordbook. Powered by React/Firebase.</p>
+              </div>
+            </a>
           </div>
-          <div class="col-lg-4">
-            <img src="img/recipe.jpg" alt="flashcard" />
+          <div class="col-lg-4 wrapper recipe">
+            <a href="http://recipechef.herokuapp.com/">
+              <img src="img/recipe.jpg" alt="Recipe Master " />
+              <div class="inner recipe-inner text-center">
+                  <h2>Recipe Master</h2>
+                  <p>Figure out what to make for dinner! Powered by jQuery + Node.js</p>
+              </div>
+            </a>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
-            <img src="img/tower.jpg" alt="Tower of Hanoi" />
+          <div class="col-lg-4 wrapper tower">
+            <a href="#">
+              <img src="img/tower.jpg" alt="Tower of Hanoi" />
+              <div class="inner tower-inner text-center">
+                  <h2>Tower of Hanoi</h2>
+                  <p>Interactive Game Build with JavaScript</p>
+              </div>
+            </a>
           </div>
-          <div class="col-lg-4">
-            <img src="img/children.jpg" alt="Isaiah's Place" />
+          <div class="col-lg-4 wrapper children">
+            <a href="#">
+              <img src="img/children.jpg" alt="Isaiah's Place" />
+              <div class="inner children-inner text-center">
+                  <h2>Isaiah's Place</h2>
+                  <p>Freelance Website for Non-profit Organization</p>
+              </div>
+            </a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 wrapper flashcard">
+            <a href="https://play.google.com/store/apps/details?id=org.flashz.exp">
             <img src="img/flashcard.jpg" alt="flashcard" />
+              <div class="inner flashcard-inner text-center">
+                  <h2>FlashZ</h2>
+                  <p>Flashcard Game Built with React Native</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
