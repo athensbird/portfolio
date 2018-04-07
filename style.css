@@ -18,6 +18,14 @@ input {
   width: 100%;
 }
 
+.topnav {
+  overflow: hidden;
+}
+
+.topnav .icon {
+  display: none;
+}
+
 .main {
   margin-top: 50px;
   overflow: scroll;
@@ -79,6 +87,8 @@ input {
   padding: 10px;
 }
 
+
+
 .nav-pills {
   font-size: 1.7em;
   color: white;
@@ -127,6 +137,7 @@ input {
   color: black;
   font-weight: 700;
 }
+
 
 #header h1 {
   font-weight: 600;
@@ -226,4 +237,27 @@ input {
 #social-media {
   margin-top: 40px;
   text-align: center;
+}
+
+@media screen and (max-width: 725px) {
+  .topnav li:not(:first-child) {display: none;}
+  .topnav li.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive li {
+    float: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+  }
+  #navigation {
+    position: relative;
+  }
 }

@@ -7,7 +7,6 @@ $(document).ready(function(){
       // Prevent default anchor click behavior
       event.preventDefault();
 
-
       // Store hash
       var hash = this.hash;
 
@@ -23,3 +22,14 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+function toggleNavbar() {
+    var x = document.getElementById("myTopnav");
+    var icon = document.getElementById("hamburger");
+    if (x.className === "topnav nav nav-pills") {
+        x.className += " responsive";
+        icon.style.display = "none";
+    } else {
+        x.className = "topnav nav nav pills";
+    }
+}
