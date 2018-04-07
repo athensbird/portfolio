@@ -15,8 +15,8 @@
     <div class="container-fluid">
       <div id="intro" class="intro">
         <ul class="nav nav-pills">
-          <li><a href="#">Mark Wang</a></li>
-          <li class="pull-right"><a href="#">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/xilinwang">Mark Wang</a></li>
+          <li class="pull-right"><a href="#contact">Contact</a></li>
           <li class="pull-right"><a href="#portfolio-text">Resume</a></li>
           <li class="pull-right"><a href="#portfolio">Portfolio</a></li>
           <li class="pull-right"><a href="#about">About Me</a></li>
@@ -25,16 +25,10 @@
           <h1>Mark Wang</h1>
           <h2>Web Geek. JavaScript Fanatic. Idea Builder.</h2>
         </div>
-        <div class="btnList text-center">
-          <a class="btn btn-default" href="#">Twitter</a>
-          <a class="btn btn-default" href="#">GitHub</a>
-          <a class="btn btn-default" href="#">LinkedIn</a>
-          <a class="btn btn-default" href="#">Google+</a>
-        </div>
       </div>
       <div id="about" class="container-fluid">
         <div id="profile-pic" class="row">
-          <div class="col-lg-6 text-center">
+          <div id="header" class="col-lg-6 text-center">
               <h1>Hello, World!</h1>
               <h1>I'm Mark Wang.</h1>
           </div>
@@ -99,7 +93,8 @@
               <img src="img/children.jpg" alt="Isaiah's Place" />
               <div class="inner children-inner text-center">
                   <h2>Isaiah's Place</h2>
-                  <p>Freelance Website for Non-profit Organization</p>
+                  <p>Freelance Website for a non-profit organization</p>
+                  <p>Powered by HTML, CSS, and Bootstrap</p>
               </div>
             </a>
           </div>
@@ -112,6 +107,35 @@
               </div>
             </a>
           </div>
+        </div>
+      </div>
+      <div id="contact" class="container-fluid">
+        <div id="contact-text" class="row text-center">
+          <h2>Let's get in touch.</h2>
+        </div>
+        <form class="text-center" action="mailto:popularwatson@gmail.com" method="post" enctype:"text/plain">
+          <div class="col-lg-6 col-lg-offset-3">
+            <div id="contact-first-row" class="row">
+              <div class="col-lg-4">
+                <input type="text" placeholder="Name" />
+              </div>
+              <div id="email-row" class="col-lg-8">
+                <input type="text" placeholder="Email" />
+              </div>
+            </div>
+            <div class="row">
+              <input id="contact-second-row" type="text" placeholder="Message" />
+            </div>
+            <div class="form-submit row">
+              <button id="submit-button" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+        <div id="social-media" class="col-lg-4 col-lg-offset-4">
+          <a href="https://www.github.com/athensbird"><i class="fa fa-github fa-fw fa-3x"></i></a>
+          <a href="https://www.linkedin.com/in/xilinwang"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+          <a href="https://www.facebook.com/mark.wang.58152"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+          <a href="https://plus.google.com/100299366968176549634"><i class="fa fa-google-plus fa-fw fa-3x"></i></a>
         </div>
       </div>
     </div>

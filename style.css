@@ -14,6 +14,10 @@ img {
   width: 100%;
 }
 
+input {
+  width: 100%;
+}
+
 #profile-pic img {
   width: 12%;
   border-radius: 60%;
@@ -103,7 +107,17 @@ img {
     width: 50px;
 }
 
+.fa {
+  color: gray;
+  margin: 0 10px;
+}
+
 #intro a {
+  color: black;
+}
+
+#header h1 {
+  font-weight: 600;
   color: black;
 }
 
@@ -130,7 +144,6 @@ img {
     100% {bottom: 0;}
 }
 
-
 #portfolio-text h2 {
   font-size: 6em;
 }
@@ -139,4 +152,38 @@ img {
   padding: 10 20%;
   font-size: 1.5em;
   text-align: justify;
+}
+
+#contact {
+  margin: 50px 0;
+}
+
+#contact-text {
+  margin-bottom: 20px;
+}
+
+#contact-first-row {
+  margin-bottom: 5px;
+}
+
+#email-row div{
+  padding: 1;
+}
+
+#contact-second-row {
+  height: 80px;
+  margin-bottom: 2em;
+}
+
+#submit-button {
+  background-color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: black;
+  border: none;
+}
+
+#social-media {
+  margin-top: 40px;
+  text-align: center;
 }
