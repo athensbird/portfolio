@@ -1,0 +1,74 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: gray;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 5em;
+}
+
+img {
+  width: 100%;
+}
+
+.blog {
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-inner {
+  height: 100%;
+  width: 100%;
+  padding: 40px 5px;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.col-lg-4 {
+  padding: 0 !important;
+}
+
+.blog:hover img {
+  opacity: 0.4;
+}
+
+.blog:hover .blog-inner {
+  top: 0;
+}
+
+.block {
+  opacity: .7;
+  display: block;
+  padding: 10px;
+}
+
+.nav-pills {
+  font-size: 1.7em;
+  background-color: #E7DFDE;
+  opacity: .8;
+}
+
+.btn-default {
+  background-color: none;
+  border-color: black;
+  font-size: 1.5em;
+}
+
+.intro {
+  background: url("https://images.unsplash.com/photo-1504198266287-1659872e6590?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cdc5b96cfce7ed1710409aaee2cd22c1&auto=format&fit=crop&w=2550&q=80");
+  background-size: cover;
+  height: 800px;
+  margin-top: 0 auto;
+}
+
+.portfolio {
+  margin-top: 3em;
+}
